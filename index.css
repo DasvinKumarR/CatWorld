@@ -8,6 +8,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+/* set root div to flex and direction to  row and flex wrapas wrap */
+.root{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 /* set style to cat world */
 .header{
@@ -18,7 +26,25 @@
     margin-right: 35px;
 }
 /* set size for image */
-img{
-    height: 550px;
-    width: auto;
+.singleImage{
+    height: 450px;
+    width: 350px;
+}
+/* setting height and widht for card div */
+.card{
+    height: 510px;
+    width: 280px;
+}
+/* setting height for card body div */
+.card-body{
+    height: 155px;
+}
+/* setting height and width for card images */
+.gallery{
+    height: 350px;
+    width: 280px;
+}
+/* setting margin  */
+.card-wrapper{
+    margin-top: 40px;
 }
