@@ -1,7 +1,5 @@
 // Declared base url
 const baseURL = "https://cataas.com/";
-let catCount = 50;
-let id = [];
 // get div element using classname
 let root = document.getElementsByClassName("root")[0];
 // function to create card.
@@ -24,7 +22,7 @@ async function createCard(id, tags, img) {
     }
 }
 // promise function to fetch and display the data
-fetch('https://cataas.com/api/cats')
+fetch(baseURL+'cats')
 .then(response=>response.json())
 .then(data=>{
     data.forEach(e => {
