@@ -22,7 +22,7 @@ async function createCard(id, tags, img) {
     }
 }
 // promise function to fetch and display the data
-fetch(baseURL+'cats')
+fetch(baseURL+'api/cats')
 .then(response=>response.json())
 .then(data=>{
     data.forEach(e => {
